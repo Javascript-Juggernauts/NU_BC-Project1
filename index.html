@@ -47,8 +47,38 @@
       <li><a href="#">Link to something maybe</a></li>
       <li><a href="#">Something else..placeholder</a></li>
     </ul>
-    <div class="events cell medium-10">
-      <h3>Events</h3>
+    <div class="cell medium-10">
+      <h3 class="events">Events
+          <a href="#" data-open="eventModal">Create an Event</a>
+          <div id="eventModal" class="reveal-modal" data-reveal role="dialog">
+            <h1>Create and Event</h1>
+            <form id="eventForm">
+              <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                  <div class="medium-6">
+                    <label>Event Name
+                      <input id="event_name" type="text" placeholder="Event Name">
+                    </label>
+                  </div>
+                  <div class="medium-6">
+                      <label>Event Date (MM/DD/YY)
+                        <input id="event_date" type="text" placeholder="MM/DD/YY">
+                      </label>
+                    </div>
+                    <div class="medium-6">
+                        <label>Event Address
+                          <input id="event_address" type="text" placeholder="Address, City, State Zip">
+                        </label>
+                      </div>
+                  <input class="button expanded large-down-expanded" id="event_create" type="submit" href="#" value="Create Event">
+                </div>
+              </div>
+            </form>
+            <!-- <button class="close-button" data-close aria-label="Close modal" type="button"> -->
+            <!-- <span aria-hidden="true">&times;</span> -->
+            <!-- </button> -->
+          </div>
+      </h3>
       <h3>My Collection</h3>
       <p>Highly Recommended! <a href="boardgamegeek.com">boardgamegeek.com</a></p>
       <!-- colleciton items go here -->

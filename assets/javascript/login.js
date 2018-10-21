@@ -12,6 +12,16 @@ const JQ_IDs = {
 for (let id of Object.keys(JQ_IDs)) {
   JQ_IDs[id] = $(`#${id}`);
 }
+
+const events = {
+     create_eventName: null,
+     create_eventDate: null,
+     create_eventAddressFul: null,
+     create_submit: null
+   };
+   for (let id of Object.keys(events)) {
+     events[id] = $(`#${id}`);
+}
 //#endregion DOM ELEMENTS
 
 // Firebase References

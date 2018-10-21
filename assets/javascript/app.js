@@ -177,3 +177,16 @@ let BGG_API = {
 
 // let xmlFromString = $.parseXML(xmlString);
 // my_collection = $.xml2json(xmlFromString);
+
+
+
+
+$(".thumbnail").on("click", function(){
+var temp = $(".thumbnail").attr("src");
+console.log(temp);
+var image = $("<img>")
+image.attr("src", temp)
+$(events.html).ready(function() {
+  $(".target").append(image);
+})
+});
